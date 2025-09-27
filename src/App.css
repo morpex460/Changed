@@ -1,0 +1,14 @@
+/* Custom styles for Yyps Trade */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Ensure smooth scrolling works */
+* {
+  scroll-behavior: smooth;
+}
