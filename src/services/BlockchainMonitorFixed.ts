@@ -160,14 +160,17 @@ export class BlockchainMonitorFixed {
               
               if (network === 'bsc' && token === 'USDT') {
                 // Для BEP-20 USDT: проверяем и raw значение, и пересчитанное
-                const rawExpectedAmount = 5000000000000; // 5 USDT в raw формате для BEP-20
+                // BEP-20 USDT использует 6 decimals: amount * 10^6
+                const rawExpectedAmount = expectedAmount * Math.pow(10, 12); // Динамический расчет raw формата для BEP-20
                 isAmountValid = (Math.abs(transfer.value - expectedAmount) < 0.01) || 
-                               (Math.abs(transfer.value - rawExpectedAmount) < 1000000000); // Допуск для raw значений
+                               (Math.abs(transfer.value - rawExpectedAmount) < Math.pow(10, 5)); // Допуск для raw значений (100,000)
                 console.log(`🔎 [BSC] BEP-20 Special Check:`, {
                   rawExpectedAmount: rawExpectedAmount,
                   normalExpectedAmount: expectedAmount,
                   transferValue: transfer.value,
-                  isValidByRaw: Math.abs(transfer.value - rawExpectedAmount) < 1000000000,
+                  decimals: 6,
+                  calculatedRaw: `${expectedAmount} * 10^6 = ${rawExpectedAmount}`,
+                  isValidByRaw: Math.abs(transfer.value - rawExpectedAmount) < Math.pow(10, 5),
                   isValidByNormal: Math.abs(transfer.value - expectedAmount) < 0.01
                 });
               } else {

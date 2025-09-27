@@ -281,7 +281,7 @@ const TransactionMonitorUpdated: React.FC<TransactionMonitorProps> = ({
     
     console.log('🚀 Starting blockchain monitoring for SELECTED network only');
     console.log('📍 Monitoring address:', paymentAddress.address);
-    console.log('💰 Expected amount:', paymentAddress.amount || 5, paymentAddress.currency.symbol);
+    console.log('💰 Expected amount:', paymentAddress.amount || 10, paymentAddress.currency.symbol);
     console.log('🌐 Selected network:', paymentAddress.currency.network);
     console.log('🆔 Currency ID:', paymentAddress.currency.id);
     
@@ -299,7 +299,7 @@ const TransactionMonitorUpdated: React.FC<TransactionMonitorProps> = ({
       console.log(`🔍 Starting ${token} monitoring on ${selectedNetwork} network with enhanced block range`);
       await blockchainMonitorFixed.monitorTokenTransfers(
         paymentAddress.address,
-        paymentAddress.amount || 5,
+        paymentAddress.amount || 10, // Обновлено под новую цену подписки
         selectedNetwork,
         token,
         (txResult) => {
@@ -672,7 +672,7 @@ const TransactionMonitorUpdated: React.FC<TransactionMonitorProps> = ({
                       <CheckCircle className="h-5 w-5 text-green-500" />
                       <span className="text-green-700 font-semibold">Payment successfully processed!</span>
                     </div>
-                    <p className="text-green-600 mt-1">Доступ к сервису будет активирован в течение нескольких секунд.</p>
+                    <p className="text-green-600 mt-1">Access to the service will be activated within a few seconds</p>
                   </div>
                 )}
               </div>

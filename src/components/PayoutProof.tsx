@@ -60,21 +60,26 @@ const PayoutProof = () => {
       ]
     },
     {
-      company: "Blue Refunded",
-      amount: "$2,645.60",
-      image: "/images/certificates/blueberry-certificate.png",
+      company: "Blueberry Funded",
+      amount: "$35,933.40",
+      image:  "/images/certificates/bf 8.jpg",
       date: "October 2024",
       accountsPurchased: 4,
-      fundedAccounts: 3,
-      totalPayouts: 2645.60,
+      fundedAccounts: 2,
+      totalPayouts: 35933.40,
       details: {
         purchased: "Purchased 4 accounts at $50k each",
         funded: "Passed challenge on 3 accounts",
         payouts: "Received 3 payouts totaling $2,645.60"
       },
       additionalImages: [
-        "/images/certificates/blueberry-certificate.png",
-        "/images/certificates/blueberry-certificate.png"
+        "/images/certificates/bf 7.jpg",
+        "/images/certificates/bf 6.jpg",
+        "/images/certificates/bf 5.jpg",
+        "/images/certificates/bf 4.JPEG", 
+        "/images/certificates/bf 3.jpg",
+        "/images/certificates/bf 2.JPEG",
+        "/images/certificates/bf 1.JPEG"
       ]
     },
     {

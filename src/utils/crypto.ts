@@ -12,7 +12,7 @@ const CRYPTO_CONFIG = {
     'tether-optimism': "0x717020d58e62dfd1f18846922a4334a89ca5a360" // Replaced Solana with Optimism
   },
   discordInviteLink: "https://discord.gg/yyps-private-123456",
-  subscriptionPrice: 5 // Changed to $5 for subscription
+  subscriptionPrice: 15 // Changed to $5 for subscription
 };
 
 // Base currencies (USDT only)
