@@ -71,7 +71,8 @@ const Footer = () => {
                 <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400 mr-2 sm:mr-3 flex-shrink-0" />
                 <div>
                   <p className="text-xs sm:text-sm text-gray-300">Telegram</p>
-                  <a href="#" className="text-sm sm:text-base text-blue-400 hover:text-blue-300">@yyps_trade</a>
+                  <a href="#" className="text-sm sm:text-base text-blue-400 hover:text-blue-300">@yypstrade</a>
+                  
                 </div>
               </div>
               <div className="flex items-center">
@@ -79,7 +80,7 @@ const Footer = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-gray-300">Email</p>
                   <a href="mailto:support@yypstrade.com" className="text-sm sm:text-base text-blue-400 hover:text-blue-300 break-all">
-                    support@yypstrade.com
+                    qcrb355@gmail.com
                   </a>
                 </div>
               </div>

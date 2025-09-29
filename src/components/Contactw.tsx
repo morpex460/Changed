@@ -9,15 +9,14 @@ const Contact = () => {
     {
       platform: "Telegram",
       icon: MessageCircle,
-      handle: "@purevile",
-      url: "https://t.me/purevile",
+      handle: "@yypstrade",
+      url: "https://t.me/yypstrade",
       color: "text-blue-500"
     },
     {
       platform: "Email",
       icon: Mail,
-      handle: "support@yypstrade.com",
-      url: "mailto:support@yypstrade.com",
+      handle: "qcrb355@gmail.com",
       color: "text-red-500"
     },
     {
