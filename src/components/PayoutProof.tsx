@@ -4,19 +4,25 @@ import { X } from 'lucide-react';
 const PayoutProof = () => {
   const [selectedPayout, setSelectedPayout] = useState(null);
 
-  // Блокировка прокрутки при открытии модального окна
+  // Блокировка прокрутки и закрытие по Esc
   useEffect(() => {
     if (selectedPayout) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
-    
-    // Очистка при размонтировании компонента
+
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') setSelectedPayout(null);
+    };
+    window.addEventListener('keydown', handleEsc);
+
     return () => {
       document.body.style.overflow = 'unset';
+      window.removeEventListener('keydown', handleEsc);
     };
   }, [selectedPayout]);
+
   const payouts = [
     {
       company: "FTMO",
@@ -26,11 +32,6 @@ const PayoutProof = () => {
       accountsPurchased: 2,
       fundedAccounts: 1,
       totalPayouts: 21812.43,
-      details: {
-        purchased: "Purchased 3 accounts at $50k each",
-        funded: "Passed challenge on 2 accounts",
-        payouts: "Received 1 payout of $1,526.40"
-      },
       additionalImages: [
         "/images/certificates/tmo 7.JPEG",
         "/images/certificates/tmo 2.JPEG",
@@ -48,11 +49,6 @@ const PayoutProof = () => {
       accountsPurchased: 5,
       fundedAccounts: 4,
       totalPayouts: 3878.00,
-      details: {
-        purchased: "Purchased 5 accounts at $100k each",
-        funded: "Passed challenge on 4 accounts",
-        payouts: "Received 2 payouts totaling $3,878.00"
-      },
       additionalImages: [
         "/images/certificates/blue-guardian-certificate.png",
         "/images/certificates/blue-guardian-certificate.png",
@@ -67,11 +63,6 @@ const PayoutProof = () => {
       accountsPurchased: 4,
       fundedAccounts: 2,
       totalPayouts: 35933.40,
-      details: {
-        purchased: "Purchased 4 accounts at $50k each",
-        funded: "Passed challenge on 3 accounts",
-        payouts: "Received 3 payouts totaling $2,645.60"
-      },
       additionalImages: [
         "/images/certificates/bf 7.jpg",
         "/images/certificates/bf 6.jpg",
@@ -90,11 +81,6 @@ const PayoutProof = () => {
       accountsPurchased: 2,
       fundedAccounts: 2,
       totalPayouts: 1299.00,
-      details: {
-        purchased: "Purchased 2 accounts at $25k each",
-        funded: "Passed challenge on 2 accounts",
-        payouts: "Received 1 payout of $1,299.00"
-      },
       additionalImages: [
         "/images/certificates/fintokei-certificate.png"
       ]
@@ -150,9 +136,15 @@ const PayoutProof = () => {
             </div>
           ))}
         </div>
+
         {/* Modal */}
         {selectedPayout && (
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+          <div
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) setSelectedPayout(null);
+            }}
+          >
             <div className="bg-white rounded-2xl max-w-6xl w-full max-h-[95vh] overflow-y-auto">
               <div className="relative">
                 <button
