@@ -9,7 +9,6 @@ const MembershipPlans = () => {
 
   const handleGetFullAccess = () => {
     navigate('/wallet');
-    // Scroll to top when navigating to wallet
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 100);
@@ -35,6 +34,7 @@ const MembershipPlans = () => {
         "No Prop Firms Overwiew"
       ],
       buttonText: "Try for Free",
+      buttonLink: "https://discord.gg/h4qPr7UXZ9", // 🔗 добавляем сюда ссылку на Discord
       popular: false,
       buttonStyle: "border border-gray-300 text-gray-900 hover:bg-gray-50"
     },
@@ -126,6 +126,7 @@ const MembershipPlans = () => {
                 )}
               </div>
 
+              {/* Кнопки */}
               {plan.buttonText === "Get Full Access" ? (
                 <button
                   onClick={handleGetFullAccess}
@@ -134,11 +135,14 @@ const MembershipPlans = () => {
                   {plan.buttonText}
                 </button>
               ) : (
-                <button
-                  className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 ${plan.buttonStyle} shadow-lg hover:shadow-xl ${!isMobile ? 'transform hover:-translate-y-1' : ''}`}
+                <a
+                  href={plan.buttonLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block text-center w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 ${plan.buttonStyle} shadow-lg hover:shadow-xl ${!isMobile ? 'transform hover:-translate-y-1' : ''}`}
                 >
                   {plan.buttonText}
-                </button>
+                </a>
               )}
             </div>
           ))}
