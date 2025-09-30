@@ -43,16 +43,18 @@ const PayoutProof = () => {
     },
     {
       company: "Blue Guardian",
-      amount: "$3,878.00",
-      image: "/images/certificates/blue-guardian-certificate.png",
+      amount: "$22,958.00",
+      image: "/images/certificates/bg 1.jpg",
       date: "February 2025",
       accountsPurchased: 5,
       fundedAccounts: 4,
       totalPayouts: 3878.00,
       additionalImages: [
-        "/images/certificates/blue-guardian-certificate.png",
-        "/images/certificates/blue-guardian-certificate.png",
-        "/images/certificates/blue-guardian-certificate.png"
+        "/images/certificates/bg 2.jpg",
+        "/images/certificates/bg 3.jpg",
+        "/images/certificates/bg 4.jpg",
+        "/images/certificates/bg 5.jpg", 
+        "/images/certificates/bg 6.jpg"
       ]
     },
     {
@@ -74,15 +76,16 @@ const PayoutProof = () => {
       ]
     },
     {
-      company: "Fintokei",
-      amount: "$1,299.00",
-      image: "/images/certificates/fintokei-certificate.png",
+      company: "Instant Funding",
+      amount: "$20,385.60",
+      image: "/images/certificates/in 1.jpg",
       date: "November 2024",
       accountsPurchased: 2,
       fundedAccounts: 2,
       totalPayouts: 1299.00,
       additionalImages: [
-        "/images/certificates/fintokei-certificate.png"
+        "/images/certificates/in 2.jpg",
+        "/images/certificates/in 3.jpg"
       ]
     }
   ];
@@ -116,15 +119,23 @@ const PayoutProof = () => {
             >
               <div className="aspect-square overflow-hidden bg-gray-50 flex items-center justify-center p-2">
                 <img
-                  src={payout.image}
-                  alt={`${payout.company} payout certificate`}
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
-                  style={{ 
-                    maxWidth: '100%', 
-                    maxHeight: '100%',
-                    objectFit: 'contain'
-                  }}
-                />
+  src={payout.image}
+  alt={`${payout.company} payout certificate`}
+  className={`w-full h-full transition-transform duration-300 object-contain ${
+    payout.company === "Blue Guardian" || payout.company === "Instant Funding" ? "" : "hover:scale-105"
+  }`}
+  style={{
+    maxWidth: '100%',
+    maxHeight: '100%',
+    objectFit: 'contain',
+    transform:
+      payout.company === "Blue Guardian"
+        ? 'scale(1.33) translateY(33px)' // 🎯 Настройки только для Blue Guardian
+      : payout.company === "Instant Funding"
+        ? 'scale(1.16) translateY(20px)' // 🎯 Настройки только для Instant Funding
+      : 'scale(1)'
+  }}
+/>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
