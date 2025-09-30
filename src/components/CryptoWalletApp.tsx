@@ -597,17 +597,6 @@ const CryptoWalletApp: React.FC = () => {
       <Contactw />
       {/* DEBUG ONLY - кнопка для быстрого перехода к финальному экрану */}
       {/* УДАЛИТЬ ЭТОТ БЛОК ПОСЛЕ ТЕСТИРОВАНИЯ */}
-      <button
-        onClick={jumpToFinalStep}
-        className="fixed bottom-8 right-8 p-4 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 z-50 border-2 border-white/20 backdrop-blur-sm animate-pulse"
-        title="DEBUG: Go to final screen"
-        style={{ 
-          minWidth: '56px', 
-          minHeight: '56px'
-        }}
-      >
-        <ArrowDown className="h-6 w-6" />
-      </button>
     </div>
   );
 };
