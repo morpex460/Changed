@@ -34,7 +34,7 @@ const SuccessPage: React.FC<SuccessPageProps> = ({ transaction, onReset }) => {
         </h1>
 
         <p className={`${isMobile ? 'text-base' : 'text-lg lg:text-xl'} text-gray-600 mb-6 sm:mb-8 lg:mb-10 max-w-3xl mx-auto leading-relaxed`}>
-          Your payment has been processed successfully! You now have full access to YYPS Trade premium content and our exclusive Discord community.
+          Your payment has been processed successfully! You now have full access to YYPS Trade premium content and our exclusive discord community.
         </p>
 
       </div>
@@ -42,37 +42,8 @@ const SuccessPage: React.FC<SuccessPageProps> = ({ transaction, onReset }) => {
       {/* Welcome Video Section */}
       <div className="bg-white rounded-2xl lg:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border border-gray-100">
         <h2 className={`${isMobile ? 'text-2xl' : 'text-3xl lg:text-4xl'} font-bold text-gray-900 mb-6 sm:mb-7 lg:mb-8 text-center`}>
-          Welcome to YYPS Trade!
+          Welcome to Your new community!
         </h2>
-        
-        {/* Video Container */}
-        <div className="mb-6 sm:mb-8 lg:mb-10">
-          <div className="bg-gray-100 rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border-2 border-dashed border-gray-300 text-center">
-            <div className={`w-full ${isMobile ? 'h-48' : 'h-64 lg:h-96'} bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg lg:rounded-xl border-2 border-blue-200 flex items-center justify-center relative overflow-hidden`}>
-              {/* Actual video element */}
-              <video 
-                className="w-full h-full object-cover rounded-xl"
-                controls
-                poster="/images/crypto/usdt.png"
-              >
-                <source src="/videos/welcome.mp4" type="video/mp4" />
-                {/* Fallback content */}
-                <div className="text-center">
-                  <div className={`${isMobile ? 'w-16 h-16' : 'w-20 h-20 lg:w-24 lg:h-24'} bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4`}>
-                    <svg className={`${isMobile ? 'w-8 h-8' : 'w-9 h-9 lg:w-10 lg:h-10'} text-white`} fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <h3 className={`${isMobile ? 'text-lg' : 'text-xl'} font-semibold text-gray-700 mb-2`}>Welcome Video</h3>
-                  <p className={`text-gray-500 ${isMobile ? 'text-sm' : 'text-base'}`}>
-                    Your browser doesn't support HTML5 video
-                  </p>
-                </div>
-              </video>
-            </div>
-          </div>
-        </div>
-
         {/* Getting Started Instructions */}
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border border-blue-200">
           <h3 className={`${isMobile ? 'text-xl' : 'text-2xl'} font-bold text-gray-900 mb-4 sm:mb-5 lg:mb-6 text-center`}>
@@ -83,11 +54,11 @@ const SuccessPage: React.FC<SuccessPageProps> = ({ transaction, onReset }) => {
             <div className="space-y-4 sm:space-y-5 lg:space-y-6">
               <h4 className={`${isMobile ? 'text-lg' : 'text-xl'} font-semibold text-gray-900 mb-3 lg:mb-4 flex items-start ${isMobile ? 'items-center' : ''}`}>
                 <span className={`${isMobile ? 'w-6 h-6 text-xs' : 'w-7 h-7 lg:w-8 lg:h-8 text-sm'} bg-blue-500 text-white rounded-full flex items-center justify-center mr-3 font-bold flex-shrink-0`} style={{ lineHeight: '1' }}>1</span>
-                <span className="flex-1">Watch the video instructions in full</span>
+                <span className="flex-1">Click on the link below to join the Discord group</span>
               </h4>
               <h4 className={`${isMobile ? 'text-lg' : 'text-xl'} font-semibold text-gray-900 mb-3 lg:mb-4 flex items-start ${isMobile ? 'items-center' : ''}`}>
                 <span className={`${isMobile ? 'w-6 h-6 text-xs' : 'w-7 h-7 lg:w-8 lg:h-8 text-sm'} bg-blue-500 text-white rounded-full flex items-center justify-center mr-3 font-bold flex-shrink-0`} style={{ lineHeight: '1' }}>2</span>
-                <span className="flex-1">Click on the link below to join the Discord group</span>
+                <span className="flex-1">Watch the video instructions in full</span>
               </h4>
               <h4 className={`${isMobile ? 'text-lg' : 'text-xl'} font-semibold text-gray-900 mb-3 lg:mb-4 flex items-start ${isMobile ? 'items-center' : ''}`}>
                 <span className={`${isMobile ? 'w-6 h-6 text-xs' : 'w-7 h-7 lg:w-8 lg:h-8 text-sm'} bg-blue-500 text-white rounded-full flex items-center justify-center mr-3 font-bold flex-shrink-0`} style={{ lineHeight: '1' }}>3</span>
