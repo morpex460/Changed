@@ -9,39 +9,39 @@ const Hero = () => {
   
   const payoutSlides = [
     {
-      image: "/images/certificates/tmo 7.JPEG",
+      image: "/images/certificates/tmo 6.JPEG",
       company: "FTMO",
       amount: "$8,679.34"
     },
     {
-      image: "/images/certificates/bg-cte.png", 
-      company: "BlueGuardian",
+      image: "/images/certificates/bg 1.jpg", 
+      company: "Blue Guardian",
+      amount: "$5,285.00"
+    },
+    {
+      image: "/images/certificates/bf 8.jpg",
+      company: "Blueberry Funded", 
+      amount: "$7,638.20"
+    },
+    {
+      image: "/images/certificates/in 1.jpg",
+      company: "Instant Funding",
+      amount: "$8,223.20"
+    },
+    {
+      image: "/images/certificates/tmo 7.JPEG",
+      company: "FTMO",
+      amount: "$4,073.84"
+    },
+    {
+      image: "/images/certificates/bg-cte.jpg", 
+      company: "Blue Guardian",
       amount: "$3,878.00"
     },
     {
-      image: "/images/certificates/blueberry-certificate.png",
+      image: "/images/certificates/bf 7.jpg",
       company: "Blueberry Funded", 
-      amount: "$2,645.60"
-    },
-    {
-      image: "/images/certificates/fintokei-certificate.png",
-      company: "Fintokei",
-      amount: "$1,299.00"
-    },
-    {
-      image: "/images/certificates/fivers-certificate.jpg",
-      company: "Fivers",
-      amount: "$987.50"
-    },
-    {
-      image: "/images/certificates/brightfunded-certificate.png",
-      company: "BrightFunded",
-      amount: "$2,150.80"
-    },
-    {
-      image: "/images/certificates/bg-cte.jpg",
-      company: "FundingPips",
-      amount: "$1,743.20"
+      amount: "$6,044.80"
     }
   ];
 
