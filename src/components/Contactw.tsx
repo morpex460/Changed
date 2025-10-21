@@ -54,7 +54,7 @@ const Contact = () => {
               href={contact.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gray-50 rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 text-center hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+             className="group bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 text-center hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 w-36 sm:w-40 lg:w-48"
             >
               <div className={`inline-flex items-center justify-center ${isMobile ? 'w-12 h-12' : 'w-14 h-14 lg:w-16 lg:h-16'} rounded-full bg-white shadow-lg mb-2 sm:mb-3 lg:mb-4 ${contact.color} group-hover:scale-110 transition-transform duration-300`}>
                 <contact.icon className={`${isMobile ? 'h-6 w-6' : 'h-7 w-7 lg:h-8 lg:w-8'}`} />
