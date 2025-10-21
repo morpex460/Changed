@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MessageCircle, Users, Twitter, Instagram } from 'lucide-react';
+import { Mail, MessageCircle, Users, Instagram } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const Contact = () => {
@@ -25,13 +25,6 @@ const Contact = () => {
       handle: "@yypstrade",
       url: "https://discord.com/users/969898192466485329",
       color: "text-indigo-500"
-    },
-    {
-      platform: "Twitter",
-      icon: Twitter,
-      handle: "@yypstrade",
-      url: "https://twitter.com/yypstrade",
-      color: "text-sky-500"
     },
     {
       platform: "Instagram",
