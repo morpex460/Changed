@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center mb-4 lg:mb-6">
               <img
-                src="/images/logo/tgo.jpg"
+                src="/images/logo/Tgo.jpg"
                 alt="YYPS Trade"
                 className="h-8 sm:h-10 lg:h-12 w-auto rounded-lg"
               />
