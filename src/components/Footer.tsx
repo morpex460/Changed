@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 lg:mt-12 pt-6 lg:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-              © 2025 Yyps Trade. All rights reserved.
+              © 2026 Yyps Trade. All rights reserved.
             </p>
             <div className="mt-2 md:mt-0">
               <p className="text-gray-400 text-xs sm:text-sm text-center md:text-right">
