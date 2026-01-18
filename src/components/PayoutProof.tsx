@@ -46,9 +46,9 @@ const PayoutProof = () => {
       amount: "$22,958.00",
       image: "/images/certificates/bg 1.jpg",
       date: "February 2025",
-      accountsPurchased: 5,
-      fundedAccounts: 4,
-      totalPayouts: 3878.00,
+      accountsPurchased: 3,
+      fundedAccounts: 2,
+      totalPayouts: 22958.00,
       additionalImages: [
         "/images/certificates/bg 2.jpg",
         "/images/certificates/bg 3.jpg",
@@ -61,7 +61,7 @@ const PayoutProof = () => {
       company: "Blueberry Funded",
       amount: "$35,933.40",
       image:  "/images/certificates/bf 8.jpg",
-      date: "October 2024",
+      date: "February 2025",
       accountsPurchased: 4,
       fundedAccounts: 2,
       totalPayouts: 35933.40,
@@ -81,8 +81,8 @@ const PayoutProof = () => {
       image: "/images/certificates/in 1.jpg",
       date: "November 2024",
       accountsPurchased: 2,
-      fundedAccounts: 2,
-      totalPayouts: 1299.00,
+      fundedAccounts: 1,
+      totalPayouts: 20385.60,
       additionalImages: [
         "/images/certificates/in 2.jpg",
         "/images/certificates/in 3.jpg"
