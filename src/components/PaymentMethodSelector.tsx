@@ -17,7 +17,7 @@ const PaymentMethodSelector: React.FC<PaymentMethodSelectorProps> = ({
   const isMobile = useIsMobile();
   
   const subscriptionPlan = {
-    name: 'Full Access to YYPS Trade',
+    name: 'Full Access To Prop Trading Group',
     price: 499,
     features: [
       'Complete trading strategy with precise entries',
