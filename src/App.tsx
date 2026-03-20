@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import CryptoWalletApp from './components/CryptoWalletApp';
 import { useImagePreloader } from './hooks/useImagePreloader';
 
@@ -23,7 +24,8 @@ function App() {
           <Route path="/wallet" element={<CryptoWalletApp />} />
         </Routes>
         <Analytics />
-        
+        <SpeedInsights />
+
       </div>
     </Router>
   );
