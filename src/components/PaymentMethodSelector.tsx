@@ -18,7 +18,7 @@ const PaymentMethodSelector: React.FC<PaymentMethodSelectorProps> = ({
   
   const subscriptionPlan = {
     name: 'Full Access To Prop Trading Group',
-    price: 499,
+    price: 199,
     features: [
       'Complete trading strategy with precise entries',
       'Specific stop-loss and take-profit levels',

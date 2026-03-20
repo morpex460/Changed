@@ -40,7 +40,7 @@ const MembershipPlans = () => {
     },
     {
       name: "Full Version", 
-      price: "$499",
+      price: "$199",
       period: "Lifetime Access",
       description: "Complete system for professional completion of prop challenges and receiving payouts",
       features: [
