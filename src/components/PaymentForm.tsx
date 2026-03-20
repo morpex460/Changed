@@ -29,7 +29,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
 
   useEffect(() => {
     if (!preventAutoGeneration) {
-      console.log('PaymentForm: автоматическая генерация адреса разрешена');
+      console.log('PaymentForm: автоматическая генерация адреса разрешенa');
       generateAddress();
     } else {
       console.log('PaymentForm: автоматическая генерация адреса предотвращена preventAutoGeneration=true');
